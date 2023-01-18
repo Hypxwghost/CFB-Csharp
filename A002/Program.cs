@@ -7,6 +7,10 @@ namespace A002
         static void Main(string[] args)
         {
             Console.WriteLine("Hello world!");
+            if (args.GetLength(0) > 0)
+            {
+                Console.Write(args.GetValue(0));
+            }
         }
     }
 }
