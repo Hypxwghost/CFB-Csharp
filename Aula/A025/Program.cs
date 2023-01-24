@@ -1,2 +1,14 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿class A025
+{
+    static void Main()
+    {
+        int num = 10;
+        Dobrar(ref num);
+        Console.WriteLine(num);
+    }
+
+    static void Dobrar(ref int valor)
+    {
+        valor *= 2;
+    }
+}
