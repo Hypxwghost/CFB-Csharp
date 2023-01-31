@@ -1,4 +1,4 @@
-﻿class A044
+﻿class A045
 {
     static void Main()
     {
