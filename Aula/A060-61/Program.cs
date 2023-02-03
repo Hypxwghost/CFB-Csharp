@@ -1,4 +1,4 @@
-namespace A062
+namespace A061
 {
     internal static class Program
     {
