@@ -28,78 +28,140 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_adicionar = new System.Windows.Forms.Button();
-            this.tb_veiculo = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tb_listaveiculos = new System.Windows.Forms.TextBox();
-            this.btn_limpar = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            btn_adicionar = new Button();
+            tb_veiculo = new TextBox();
+            label1 = new Label();
+            tb_listaveiculos = new TextBox();
+            btn_limpar = new Button();
+            btn_mostrar = new Button();
+            btn_valnum = new Button();
+            menuStrip1 = new MenuStrip();
+            componentesToolStripMenuItem = new ToolStripMenuItem();
+            checkBoxToolStripMenuItem = new ToolStripMenuItem();
+            cHeckedListBoxToolStripMenuItem = new ToolStripMenuItem();
+            menuStrip1.SuspendLayout();
+            SuspendLayout();
             // 
             // btn_adicionar
             // 
-            this.btn_adicionar.Location = new System.Drawing.Point(136, 27);
-            this.btn_adicionar.Name = "btn_adicionar";
-            this.btn_adicionar.Size = new System.Drawing.Size(96, 23);
-            this.btn_adicionar.TabIndex = 0;
-            this.btn_adicionar.Text = "OK";
-            this.btn_adicionar.UseVisualStyleBackColor = true;
-            this.btn_adicionar.Click += new System.EventHandler(this.Btn_adicionar_Click);
+            btn_adicionar.Location = new Point(136, 48);
+            btn_adicionar.Name = "btn_adicionar";
+            btn_adicionar.Size = new Size(96, 23);
+            btn_adicionar.TabIndex = 0;
+            btn_adicionar.Text = "OK";
+            btn_adicionar.UseVisualStyleBackColor = true;
+            btn_adicionar.Click += Btn_adicionar_Click;
             // 
             // tb_veiculo
             // 
-            this.tb_veiculo.Location = new System.Drawing.Point(12, 27);
-            this.tb_veiculo.Name = "tb_veiculo";
-            this.tb_veiculo.Size = new System.Drawing.Size(118, 23);
-            this.tb_veiculo.TabIndex = 1;
-            this.tb_veiculo.TextChanged += new System.EventHandler(this.Tb_veiculo_TextChanged);
+            tb_veiculo.Location = new Point(12, 48);
+            tb_veiculo.Name = "tb_veiculo";
+            tb_veiculo.Size = new Size(118, 23);
+            tb_veiculo.TabIndex = 1;
+            tb_veiculo.TextChanged += Tb_veiculo_TextChanged;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 15);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Digite um veiculo";
+            label1.AutoSize = true;
+            label1.Location = new Point(12, 30);
+            label1.Name = "label1";
+            label1.Size = new Size(100, 15);
+            label1.TabIndex = 2;
+            label1.Text = "Digite um veiculo";
             // 
             // tb_listaveiculos
             // 
-            this.tb_listaveiculos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_listaveiculos.Location = new System.Drawing.Point(12, 56);
-            this.tb_listaveiculos.Multiline = true;
-            this.tb_listaveiculos.Name = "tb_listaveiculos";
-            this.tb_listaveiculos.Size = new System.Drawing.Size(220, 231);
-            this.tb_listaveiculos.TabIndex = 3;
+            tb_listaveiculos.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_listaveiculos.Location = new Point(12, 77);
+            tb_listaveiculos.Multiline = true;
+            tb_listaveiculos.Name = "tb_listaveiculos";
+            tb_listaveiculos.Size = new Size(220, 231);
+            tb_listaveiculos.TabIndex = 3;
             // 
             // btn_limpar
             // 
-            this.btn_limpar.Location = new System.Drawing.Point(12, 293);
-            this.btn_limpar.Name = "btn_limpar";
-            this.btn_limpar.Size = new System.Drawing.Size(220, 23);
-            this.btn_limpar.TabIndex = 4;
-            this.btn_limpar.Text = "Limpar";
-            this.btn_limpar.UseVisualStyleBackColor = true;
-            this.btn_limpar.Click += new System.EventHandler(this.Btn_limpar_Click);
+            btn_limpar.Location = new Point(12, 314);
+            btn_limpar.Name = "btn_limpar";
+            btn_limpar.Size = new Size(220, 23);
+            btn_limpar.TabIndex = 4;
+            btn_limpar.Text = "Limpar";
+            btn_limpar.UseVisualStyleBackColor = true;
+            btn_limpar.Click += Btn_limpar_Click;
+            // 
+            // btn_mostrar
+            // 
+            btn_mostrar.Location = new Point(12, 343);
+            btn_mostrar.Name = "btn_mostrar";
+            btn_mostrar.Size = new Size(220, 23);
+            btn_mostrar.TabIndex = 5;
+            btn_mostrar.Text = "Mostrar Veiculos";
+            btn_mostrar.UseVisualStyleBackColor = true;
+            btn_mostrar.Click += Btn_mostrar_Click;
+            // 
+            // btn_valnum
+            // 
+            btn_valnum.Location = new Point(12, 372);
+            btn_valnum.Name = "btn_valnum";
+            btn_valnum.Size = new Size(220, 23);
+            btn_valnum.TabIndex = 6;
+            btn_valnum.Text = "Valor da Variavel num";
+            btn_valnum.UseVisualStyleBackColor = true;
+            btn_valnum.Click += Button1_Click;
+            // 
+            // menuStrip1
+            // 
+            menuStrip1.Items.AddRange(new ToolStripItem[] { componentesToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(244, 24);
+            menuStrip1.TabIndex = 7;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // componentesToolStripMenuItem
+            // 
+            componentesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { checkBoxToolStripMenuItem, cHeckedListBoxToolStripMenuItem });
+            componentesToolStripMenuItem.Name = "componentesToolStripMenuItem";
+            componentesToolStripMenuItem.Size = new Size(94, 20);
+            componentesToolStripMenuItem.Text = "Componentes";
+            // 
+            // checkBoxToolStripMenuItem
+            // 
+            checkBoxToolStripMenuItem.Name = "checkBoxToolStripMenuItem";
+            checkBoxToolStripMenuItem.Size = new Size(180, 22);
+            checkBoxToolStripMenuItem.Text = "CheckBox";
+            checkBoxToolStripMenuItem.Click += CheckBoxToolStripMenuItem_Click;
+            // 
+            // cHeckedListBoxToolStripMenuItem
+            // 
+            cHeckedListBoxToolStripMenuItem.Name = "cHeckedListBoxToolStripMenuItem";
+            cHeckedListBoxToolStripMenuItem.Size = new Size(180, 22);
+            cHeckedListBoxToolStripMenuItem.Text = "CheckedListBox";
+            cHeckedListBoxToolStripMenuItem.Click += cHeckedListBoxToolStripMenuItem_Click;
             // 
             // F_principal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(244, 323);
-            this.Controls.Add(this.btn_limpar);
-            this.Controls.Add(this.tb_listaveiculos);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.tb_veiculo);
-            this.Controls.Add(this.btn_adicionar);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
-            this.Name = "F_principal";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Componentes";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(244, 446);
+            Controls.Add(btn_valnum);
+            Controls.Add(btn_mostrar);
+            Controls.Add(btn_limpar);
+            Controls.Add(tb_listaveiculos);
+            Controls.Add(label1);
+            Controls.Add(tb_veiculo);
+            Controls.Add(btn_adicionar);
+            Controls.Add(menuStrip1);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MainMenuStrip = menuStrip1;
+            MaximizeBox = false;
+            Name = "F_principal";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Componentes";
+            Load += Form1_Load;
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -107,7 +169,13 @@
         private Button btn_adicionar;
         private TextBox tb_veiculo;
         private Label label1;
-        private TextBox tb_listaveiculos;
         private Button btn_limpar;
+        private Button btn_mostrar;
+        private Button btn_valnum;
+        public TextBox tb_listaveiculos;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem componentesToolStripMenuItem;
+        private ToolStripMenuItem checkBoxToolStripMenuItem;
+        private ToolStripMenuItem cHeckedListBoxToolStripMenuItem;
     }
 }
