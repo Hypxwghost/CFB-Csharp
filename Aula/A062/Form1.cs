@@ -83,7 +83,7 @@ namespace A062
 
         private void LabelLinkLabelToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            F_LinkLabel f_LinkLabel = new F_LinkLabel();
+            F_LinkLabel f_LinkLabel = new();
             f_LinkLabel.ShowDialog();
         }
     }
