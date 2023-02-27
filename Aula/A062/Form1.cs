@@ -63,10 +63,28 @@ namespace A062
             f_CheckBox.ShowDialog();
         }
 
-        private void cHeckedListBoxToolStripMenuItem_Click(object sender, EventArgs e)
+        private void CheckedListBoxToolStripMenuItem_Click(object sender, EventArgs e)
         {
             F_CheckedListBox f_CheckedListBox = new();
             f_CheckedListBox.ShowDialog();
+        }
+
+        private void ComboBoxToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_ComboBox f_ComboBox = new F_ComboBox();
+            f_ComboBox.ShowDialog();
+        }
+
+        private void DateTimePickerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_DateTimePicker f_DateTimePicker = new();
+            f_DateTimePicker.ShowDialog();
+        }
+
+        private void LabelLinkLabelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_LinkLabel f_LinkLabel = new F_LinkLabel();
+            f_LinkLabel.ShowDialog();
         }
     }
 }

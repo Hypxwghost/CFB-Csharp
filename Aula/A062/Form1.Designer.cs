@@ -39,6 +39,9 @@
             componentesToolStripMenuItem = new ToolStripMenuItem();
             checkBoxToolStripMenuItem = new ToolStripMenuItem();
             cHeckedListBoxToolStripMenuItem = new ToolStripMenuItem();
+            comboBoxToolStripMenuItem = new ToolStripMenuItem();
+            dateTimePickerToolStripMenuItem = new ToolStripMenuItem();
+            labelLinkLabelToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -119,7 +122,7 @@
             // 
             // componentesToolStripMenuItem
             // 
-            componentesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { checkBoxToolStripMenuItem, cHeckedListBoxToolStripMenuItem });
+            componentesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { checkBoxToolStripMenuItem, cHeckedListBoxToolStripMenuItem, comboBoxToolStripMenuItem, dateTimePickerToolStripMenuItem, labelLinkLabelToolStripMenuItem });
             componentesToolStripMenuItem.Name = "componentesToolStripMenuItem";
             componentesToolStripMenuItem.Size = new Size(94, 20);
             componentesToolStripMenuItem.Text = "Componentes";
@@ -136,7 +139,28 @@
             cHeckedListBoxToolStripMenuItem.Name = "cHeckedListBoxToolStripMenuItem";
             cHeckedListBoxToolStripMenuItem.Size = new Size(180, 22);
             cHeckedListBoxToolStripMenuItem.Text = "CheckedListBox";
-            cHeckedListBoxToolStripMenuItem.Click += cHeckedListBoxToolStripMenuItem_Click;
+            cHeckedListBoxToolStripMenuItem.Click += CheckedListBoxToolStripMenuItem_Click;
+            // 
+            // comboBoxToolStripMenuItem
+            // 
+            comboBoxToolStripMenuItem.Name = "comboBoxToolStripMenuItem";
+            comboBoxToolStripMenuItem.Size = new Size(180, 22);
+            comboBoxToolStripMenuItem.Text = "ComboBox";
+            comboBoxToolStripMenuItem.Click += ComboBoxToolStripMenuItem_Click;
+            // 
+            // dateTimePickerToolStripMenuItem
+            // 
+            dateTimePickerToolStripMenuItem.Name = "dateTimePickerToolStripMenuItem";
+            dateTimePickerToolStripMenuItem.Size = new Size(180, 22);
+            dateTimePickerToolStripMenuItem.Text = "DateTimePicker";
+            dateTimePickerToolStripMenuItem.Click += DateTimePickerToolStripMenuItem_Click;
+            // 
+            // labelLinkLabelToolStripMenuItem
+            // 
+            labelLinkLabelToolStripMenuItem.Name = "labelLinkLabelToolStripMenuItem";
+            labelLinkLabelToolStripMenuItem.Size = new Size(180, 22);
+            labelLinkLabelToolStripMenuItem.Text = "Label/LinkLabel";
+            labelLinkLabelToolStripMenuItem.Click += LabelLinkLabelToolStripMenuItem_Click;
             // 
             // F_principal
             // 
@@ -177,5 +201,8 @@
         private ToolStripMenuItem componentesToolStripMenuItem;
         private ToolStripMenuItem checkBoxToolStripMenuItem;
         private ToolStripMenuItem cHeckedListBoxToolStripMenuItem;
+        private ToolStripMenuItem comboBoxToolStripMenuItem;
+        private ToolStripMenuItem dateTimePickerToolStripMenuItem;
+        private ToolStripMenuItem labelLinkLabelToolStripMenuItem;
     }
 }
