@@ -71,7 +71,7 @@ namespace A062
 
         private void ComboBoxToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            F_ComboBox f_ComboBox = new F_ComboBox();
+            F_ComboBox f_ComboBox = new();
             f_ComboBox.ShowDialog();
         }
 
@@ -85,6 +85,18 @@ namespace A062
         {
             F_LinkLabel f_LinkLabel = new();
             f_LinkLabel.ShowDialog();
+        }
+
+        private void ListBoxToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_listBox f_ListBox = new();
+            f_ListBox.ShowDialog();
+        }
+
+        private void ListViewToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_listView f_ListView = new();
+            f_ListView.ShowDialog();
         }
     }
 }
