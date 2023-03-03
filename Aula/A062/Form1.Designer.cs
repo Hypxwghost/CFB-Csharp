@@ -44,6 +44,8 @@
             labelLinkLabelToolStripMenuItem = new ToolStripMenuItem();
             listBoxToolStripMenuItem = new ToolStripMenuItem();
             listViewToolStripMenuItem = new ToolStripMenuItem();
+            maskedTextBoxToolStripMenuItem = new ToolStripMenuItem();
+            monthCalendarToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -63,7 +65,6 @@
             tb_veiculo.Name = "tb_veiculo";
             tb_veiculo.Size = new Size(118, 23);
             tb_veiculo.TabIndex = 1;
-            tb_veiculo.TextChanged += Tb_veiculo_TextChanged;
             // 
             // label1
             // 
@@ -124,7 +125,7 @@
             // 
             // componentesToolStripMenuItem
             // 
-            componentesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { checkBoxToolStripMenuItem, cHeckedListBoxToolStripMenuItem, comboBoxToolStripMenuItem, dateTimePickerToolStripMenuItem, labelLinkLabelToolStripMenuItem, listBoxToolStripMenuItem, listViewToolStripMenuItem });
+            componentesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { checkBoxToolStripMenuItem, cHeckedListBoxToolStripMenuItem, comboBoxToolStripMenuItem, dateTimePickerToolStripMenuItem, labelLinkLabelToolStripMenuItem, listBoxToolStripMenuItem, listViewToolStripMenuItem, maskedTextBoxToolStripMenuItem, monthCalendarToolStripMenuItem });
             componentesToolStripMenuItem.Name = "componentesToolStripMenuItem";
             componentesToolStripMenuItem.Size = new Size(94, 20);
             componentesToolStripMenuItem.Text = "Componentes";
@@ -178,6 +179,20 @@
             listViewToolStripMenuItem.Text = "ListView";
             listViewToolStripMenuItem.Click += ListViewToolStripMenuItem_Click;
             // 
+            // maskedTextBoxToolStripMenuItem
+            // 
+            maskedTextBoxToolStripMenuItem.Name = "maskedTextBoxToolStripMenuItem";
+            maskedTextBoxToolStripMenuItem.Size = new Size(180, 22);
+            maskedTextBoxToolStripMenuItem.Text = "MaskedTextBox";
+            maskedTextBoxToolStripMenuItem.Click += MaskedTextBoxToolStripMenuItem_Click;
+            // 
+            // monthCalendarToolStripMenuItem
+            // 
+            monthCalendarToolStripMenuItem.Name = "monthCalendarToolStripMenuItem";
+            monthCalendarToolStripMenuItem.Size = new Size(180, 22);
+            monthCalendarToolStripMenuItem.Text = "MonthCalendar";
+            monthCalendarToolStripMenuItem.Click += MonthCalendarToolStripMenuItem_Click;
+            // 
             // F_principal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -197,7 +212,6 @@
             Name = "F_principal";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Componentes";
-            Load += Form1_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
@@ -222,5 +236,7 @@
         private ToolStripMenuItem labelLinkLabelToolStripMenuItem;
         private ToolStripMenuItem listBoxToolStripMenuItem;
         private ToolStripMenuItem listViewToolStripMenuItem;
+        private ToolStripMenuItem maskedTextBoxToolStripMenuItem;
+        private ToolStripMenuItem monthCalendarToolStripMenuItem;
     }
 }

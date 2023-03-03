@@ -10,16 +10,6 @@ namespace A062
             num = 0;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Tb_veiculo_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void Btn_adicionar_Click(object sender, EventArgs e)
         {
             if (tb_veiculo.Text == "" || tb_veiculo.Text == " ")
@@ -97,6 +87,18 @@ namespace A062
         {
             F_listView f_ListView = new();
             f_ListView.ShowDialog();
+        }
+
+        private void MaskedTextBoxToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_MaskedTextBox f_MaskedTextBox = new();
+            f_MaskedTextBox.ShowDialog();
+        }
+
+        private void MonthCalendarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_MonthCalendar f_MonthCalendar = new();
+            f_MonthCalendar.ShowDialog();
         }
     }
 }
