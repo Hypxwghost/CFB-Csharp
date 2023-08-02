@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_principal));
             btn_adicionar = new Button();
             tb_veiculo = new TextBox();
             label1 = new Label();
@@ -46,7 +48,15 @@
             listViewToolStripMenuItem = new ToolStripMenuItem();
             maskedTextBoxToolStripMenuItem = new ToolStripMenuItem();
             monthCalendarToolStripMenuItem = new ToolStripMenuItem();
+            numericUpDownToolStripMenuItem = new ToolStripMenuItem();
+            notifyIcon1 = new NotifyIcon(components);
+            MenuNotificacoes = new ContextMenuStrip(components);
+            tsm_Restaurar = new ToolStripMenuItem();
+            tsm_Mensagem = new ToolStripMenuItem();
+            tsm_Fechar = new ToolStripMenuItem();
+            pictureBoxToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
+            MenuNotificacoes.SuspendLayout();
             SuspendLayout();
             // 
             // btn_adicionar
@@ -125,7 +135,7 @@
             // 
             // componentesToolStripMenuItem
             // 
-            componentesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { checkBoxToolStripMenuItem, cHeckedListBoxToolStripMenuItem, comboBoxToolStripMenuItem, dateTimePickerToolStripMenuItem, labelLinkLabelToolStripMenuItem, listBoxToolStripMenuItem, listViewToolStripMenuItem, maskedTextBoxToolStripMenuItem, monthCalendarToolStripMenuItem });
+            componentesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { checkBoxToolStripMenuItem, cHeckedListBoxToolStripMenuItem, comboBoxToolStripMenuItem, dateTimePickerToolStripMenuItem, labelLinkLabelToolStripMenuItem, listBoxToolStripMenuItem, listViewToolStripMenuItem, maskedTextBoxToolStripMenuItem, monthCalendarToolStripMenuItem, numericUpDownToolStripMenuItem, pictureBoxToolStripMenuItem });
             componentesToolStripMenuItem.Name = "componentesToolStripMenuItem";
             componentesToolStripMenuItem.Size = new Size(94, 20);
             componentesToolStripMenuItem.Text = "Componentes";
@@ -193,6 +203,52 @@
             monthCalendarToolStripMenuItem.Text = "MonthCalendar";
             monthCalendarToolStripMenuItem.Click += MonthCalendarToolStripMenuItem_Click;
             // 
+            // numericUpDownToolStripMenuItem
+            // 
+            numericUpDownToolStripMenuItem.Name = "numericUpDownToolStripMenuItem";
+            numericUpDownToolStripMenuItem.Size = new Size(180, 22);
+            numericUpDownToolStripMenuItem.Text = "NumericUpDown";
+            numericUpDownToolStripMenuItem.Click += NumericUpDownToolStripMenuItem_Click;
+            // 
+            // notifyIcon1
+            // 
+            notifyIcon1.ContextMenuStrip = MenuNotificacoes;
+            notifyIcon1.Icon = (Icon)resources.GetObject("notifyIcon1.Icon");
+            notifyIcon1.Text = "CFB Cursos";
+            notifyIcon1.Visible = true;
+            // 
+            // MenuNotificacoes
+            // 
+            MenuNotificacoes.Items.AddRange(new ToolStripItem[] { tsm_Restaurar, tsm_Mensagem, tsm_Fechar });
+            MenuNotificacoes.Name = "contextMenuStrip1";
+            MenuNotificacoes.Size = new Size(134, 70);
+            MenuNotificacoes.ItemClicked += MenuNotificacoes_ItemClicked;
+            // 
+            // tsm_Restaurar
+            // 
+            tsm_Restaurar.Name = "tsm_Restaurar";
+            tsm_Restaurar.Size = new Size(133, 22);
+            tsm_Restaurar.Text = "Restaurar";
+            // 
+            // tsm_Mensagem
+            // 
+            tsm_Mensagem.Name = "tsm_Mensagem";
+            tsm_Mensagem.Size = new Size(133, 22);
+            tsm_Mensagem.Text = "Mensagem";
+            // 
+            // tsm_Fechar
+            // 
+            tsm_Fechar.Name = "tsm_Fechar";
+            tsm_Fechar.Size = new Size(133, 22);
+            tsm_Fechar.Text = "Fechar";
+            // 
+            // pictureBoxToolStripMenuItem
+            // 
+            pictureBoxToolStripMenuItem.Name = "pictureBoxToolStripMenuItem";
+            pictureBoxToolStripMenuItem.Size = new Size(180, 22);
+            pictureBoxToolStripMenuItem.Text = "PictureBox";
+            pictureBoxToolStripMenuItem.Click += PictureBoxToolStripMenuItem_Click;
+            // 
             // F_principal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -214,6 +270,7 @@
             Text = "Componentes";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
+            MenuNotificacoes.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -238,5 +295,12 @@
         private ToolStripMenuItem listViewToolStripMenuItem;
         private ToolStripMenuItem maskedTextBoxToolStripMenuItem;
         private ToolStripMenuItem monthCalendarToolStripMenuItem;
+        private NotifyIcon notifyIcon1;
+        private ContextMenuStrip MenuNotificacoes;
+        private ToolStripMenuItem tsm_Restaurar;
+        private ToolStripMenuItem tsm_Mensagem;
+        private ToolStripMenuItem tsm_Fechar;
+        private ToolStripMenuItem numericUpDownToolStripMenuItem;
+        private ToolStripMenuItem pictureBoxToolStripMenuItem;
     }
 }

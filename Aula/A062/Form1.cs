@@ -100,5 +100,33 @@ namespace A062
             F_MonthCalendar f_MonthCalendar = new();
             f_MonthCalendar.ShowDialog();
         }
+
+        private void MenuNotificacoes_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            if (e.ClickedItem.Name.ToString() == "tsm_Fechar")
+            {
+                this.Close();
+            }
+            else if (e.ClickedItem.Name.ToString() == "tsm_Restaurar")
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+            else if (e.ClickedItem.Name.ToString() == "tsm_Mensagem")
+            {
+                MessageBox.Show("CFB Cursos- curso de C#");
+            }
+        }
+
+        private void NumericUpDownToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_NumericUpDown f_NumericUpDown = new();
+            f_NumericUpDown.ShowDialog();
+        }
+
+        private void PictureBoxToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_PictureBox f_PictureBox = new F_PictureBox();
+            f_PictureBox.ShowDialog();
+        }
     }
 }
