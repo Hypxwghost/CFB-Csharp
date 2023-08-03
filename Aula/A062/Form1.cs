@@ -125,8 +125,20 @@ namespace A062
 
         private void PictureBoxToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            F_PictureBox f_PictureBox = new F_PictureBox();
+            F_PictureBox f_PictureBox = new();
             f_PictureBox.ShowDialog();
+        }
+
+        private void ProgressBarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_ProgressBar f_ProgressBar = new();
+            f_ProgressBar.ShowDialog();
+        }
+
+        private void RadioButtonToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_RadioButton f_RadioButton = new();
+            f_RadioButton.ShowDialog();
         }
     }
 }

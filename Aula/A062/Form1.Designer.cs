@@ -49,12 +49,14 @@
             maskedTextBoxToolStripMenuItem = new ToolStripMenuItem();
             monthCalendarToolStripMenuItem = new ToolStripMenuItem();
             numericUpDownToolStripMenuItem = new ToolStripMenuItem();
+            pictureBoxToolStripMenuItem = new ToolStripMenuItem();
+            progressBarToolStripMenuItem = new ToolStripMenuItem();
             notifyIcon1 = new NotifyIcon(components);
             MenuNotificacoes = new ContextMenuStrip(components);
             tsm_Restaurar = new ToolStripMenuItem();
             tsm_Mensagem = new ToolStripMenuItem();
             tsm_Fechar = new ToolStripMenuItem();
-            pictureBoxToolStripMenuItem = new ToolStripMenuItem();
+            radioButtonToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             MenuNotificacoes.SuspendLayout();
             SuspendLayout();
@@ -135,7 +137,7 @@
             // 
             // componentesToolStripMenuItem
             // 
-            componentesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { checkBoxToolStripMenuItem, cHeckedListBoxToolStripMenuItem, comboBoxToolStripMenuItem, dateTimePickerToolStripMenuItem, labelLinkLabelToolStripMenuItem, listBoxToolStripMenuItem, listViewToolStripMenuItem, maskedTextBoxToolStripMenuItem, monthCalendarToolStripMenuItem, numericUpDownToolStripMenuItem, pictureBoxToolStripMenuItem });
+            componentesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { checkBoxToolStripMenuItem, cHeckedListBoxToolStripMenuItem, comboBoxToolStripMenuItem, dateTimePickerToolStripMenuItem, labelLinkLabelToolStripMenuItem, listBoxToolStripMenuItem, listViewToolStripMenuItem, maskedTextBoxToolStripMenuItem, monthCalendarToolStripMenuItem, numericUpDownToolStripMenuItem, pictureBoxToolStripMenuItem, progressBarToolStripMenuItem, radioButtonToolStripMenuItem });
             componentesToolStripMenuItem.Name = "componentesToolStripMenuItem";
             componentesToolStripMenuItem.Size = new Size(94, 20);
             componentesToolStripMenuItem.Text = "Componentes";
@@ -210,6 +212,20 @@
             numericUpDownToolStripMenuItem.Text = "NumericUpDown";
             numericUpDownToolStripMenuItem.Click += NumericUpDownToolStripMenuItem_Click;
             // 
+            // pictureBoxToolStripMenuItem
+            // 
+            pictureBoxToolStripMenuItem.Name = "pictureBoxToolStripMenuItem";
+            pictureBoxToolStripMenuItem.Size = new Size(180, 22);
+            pictureBoxToolStripMenuItem.Text = "PictureBox";
+            pictureBoxToolStripMenuItem.Click += PictureBoxToolStripMenuItem_Click;
+            // 
+            // progressBarToolStripMenuItem
+            // 
+            progressBarToolStripMenuItem.Name = "progressBarToolStripMenuItem";
+            progressBarToolStripMenuItem.Size = new Size(180, 22);
+            progressBarToolStripMenuItem.Text = "ProgressBar";
+            progressBarToolStripMenuItem.Click += ProgressBarToolStripMenuItem_Click;
+            // 
             // notifyIcon1
             // 
             notifyIcon1.ContextMenuStrip = MenuNotificacoes;
@@ -242,12 +258,12 @@
             tsm_Fechar.Size = new Size(133, 22);
             tsm_Fechar.Text = "Fechar";
             // 
-            // pictureBoxToolStripMenuItem
+            // radioButtonToolStripMenuItem
             // 
-            pictureBoxToolStripMenuItem.Name = "pictureBoxToolStripMenuItem";
-            pictureBoxToolStripMenuItem.Size = new Size(180, 22);
-            pictureBoxToolStripMenuItem.Text = "PictureBox";
-            pictureBoxToolStripMenuItem.Click += PictureBoxToolStripMenuItem_Click;
+            radioButtonToolStripMenuItem.Name = "radioButtonToolStripMenuItem";
+            radioButtonToolStripMenuItem.Size = new Size(180, 22);
+            radioButtonToolStripMenuItem.Text = "RadioButton";
+            radioButtonToolStripMenuItem.Click += RadioButtonToolStripMenuItem_Click;
             // 
             // F_principal
             // 
@@ -302,5 +318,7 @@
         private ToolStripMenuItem tsm_Fechar;
         private ToolStripMenuItem numericUpDownToolStripMenuItem;
         private ToolStripMenuItem pictureBoxToolStripMenuItem;
+        private ToolStripMenuItem progressBarToolStripMenuItem;
+        private ToolStripMenuItem radioButtonToolStripMenuItem;
     }
 }
